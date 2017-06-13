@@ -1,0 +1,8 @@
+(ns clj-jdistlib.f)
+
+(import '(net.sourceforge.jdistlib F))
+
+(defn rf
+  "generate sample from F distribution"
+  ([df1 df2] (seq (F/random df1 df2 MW)))
+  ([n df1 df2] (seq (F/random n df1 df2 MW)) 

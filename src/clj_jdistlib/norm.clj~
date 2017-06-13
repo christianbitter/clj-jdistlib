@@ -1,0 +1,11 @@
+(ns clj-jdistlib.norm)
+
+(def NORMAL (new Normal))
+
+(defn rnorm
+  "constructs a sequence of random normal variables"
+  ([] (seq [(. NORMAL random)]))
+  ([mu sigma] (seq [(Normal/random mu sigma MW)]))
+  ([n mu sigma]
+   (-> (Normal/random n mu sigma MW)
+       (seq))))
