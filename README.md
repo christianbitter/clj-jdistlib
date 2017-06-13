@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # clj-jdistlib
 
 FIXME: description
@@ -34,3 +35,6 @@ Copyright © 2017 FIXME
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
+=======
+# clj-jdistlib
+>>>>>>> d4fcb07caa6a6f04fe7043a7bc6ed7fa916a969e
