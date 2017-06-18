@@ -24,3 +24,4 @@ pom.xml.asc
 .lein-failures
 .nrepl-port
 >>>>>>> d4fcb07caa6a6f04fe7043a7bc6ed7fa916a969e
+*.clj~

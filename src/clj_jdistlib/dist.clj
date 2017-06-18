@@ -4,3 +4,4 @@
 
 (load "norm")
 (load "f")
+(load "t")

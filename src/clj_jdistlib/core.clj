@@ -1,8 +1,10 @@
 (ns clj-jdistlib.core
   (:gen-class))
 
-(require '[clj-jdistlib.dist :as cljd])
+(require '[clj-jdistlib.dist :as cljd]
+         '[clj-jdistlib.stat :as cljs])
 
+(use 'clojure.repl)
 
 (import '(net.sourceforge.jdistlib Ansari Arcsine Beta BetaBinomial
           BetaPrime Binomial Cauchy Chi ChiSquare
@@ -13,24 +15,9 @@
           NonCentralT Normal Poisson SignRank
           Spearman T Tukey Uniform Weibull Wilcoxon Wishart Zipf ))
 
-
 (defprotocol statistic
   (compute [avec] "compute the particular statistic")
-
-
-(defn sd
-  "sd of vector"
-  [avec] 0)
-
-(defn median
-  "median of vector"
-  [avec] 0)
-
-(defn var
-  "variance of vector"
-  [avec])
-
-
+                     
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
